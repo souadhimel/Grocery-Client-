@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div>
        <section className="footer">
-        <div className="share">
+        <div className="shares">
           <Link to="#" className="btn"><BsFacebook></BsFacebook></Link>
           <Link to="#" className="btn"><BsTwitter></BsTwitter></Link>
           <Link to="#" className="btn"><BsInstagram></BsInstagram></Link>

@@ -1,13 +1,18 @@
 .footer {
-    background: rgb(229, 229, 97);
+    background: rgb(227, 227, 6);
     text-align: center;
   }
   
   .footer .share {
     display: flex;
-    gap: 1.5rem;
+    gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
+  }
+   .btn{
+      font-size:50px;
+      color:rebeccapurple;
+      padding: 20px;
   }
   
   .footer .credit {
@@ -20,7 +25,4 @@
   .footer .credit span {
     color: red;
   }
-  .btn{
-      font-size:50px;
-      color:rebeccapurple
-  }
+ 

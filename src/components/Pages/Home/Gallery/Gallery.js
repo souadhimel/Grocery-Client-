@@ -31,9 +31,7 @@ const Gallery = () => {
             <div className="content">
               <h3>the posh</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+              
             </div>
           </div>
           <div className="box">
@@ -41,9 +39,7 @@ const Gallery = () => {
             <div className="content">
               <h3>the classy</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+              
             </div>
           </div>
           <div className="box">
@@ -51,9 +47,7 @@ const Gallery = () => {
             <div className="content">
               <h3>the superb</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+             
             </div>
           </div>
           <div className="box">
@@ -64,9 +58,7 @@ const Gallery = () => {
             <div className="content">
               <h3>the calm</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+             
             </div>
           </div>
           <div className="box">
@@ -75,11 +67,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the reality</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+             
             </div>
           </div>
           <div className="box">
@@ -88,11 +78,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the ultimate</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+             
             </div>
           </div>
           <div className="box">
@@ -101,11 +89,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the valuable</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+           
             </div>
           </div>
           <div className="box">
@@ -114,11 +100,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the tidy</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+             
             </div>
           </div>
           <div className="box">
@@ -127,11 +111,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the fresh</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+         
             </div>
           </div>
           <div className="box">
@@ -140,11 +122,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the wholesome</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+           
             </div>
           </div>
           <div className="box">
@@ -153,11 +133,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the bluish</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+           
             </div>
           </div>
           <div className="box">
@@ -166,11 +144,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the posh</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+           
             </div>
           </div>
           <div className="box">
@@ -179,11 +155,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the chill</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+             
             </div>
           </div>
           <div className="box">
@@ -192,11 +166,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the smily</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+         
             </div>
           </div>
           <div className="box">
@@ -205,11 +177,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the nature</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+          
             </div>
           </div>
           <div className="box">
@@ -218,11 +188,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the happiness</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+             
             </div>
           </div>
           <div className="box">
@@ -231,11 +199,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the healthy</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+              
             </div>
           </div>
           <div className="box">
@@ -244,11 +210,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the colorful</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+           
             </div>
           </div>
           <div className="box">
@@ -257,11 +221,9 @@ const Gallery = () => {
               alt=""
             />
             <div className="content">
-              <h3>the real</h3>
+              <h3>the green</h3>
 
-              <Link to="#" className="btn">
-                see more
-              </Link>
+             
             </div>
           </div>
          
