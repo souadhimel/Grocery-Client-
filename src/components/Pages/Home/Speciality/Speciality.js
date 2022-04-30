@@ -21,16 +21,7 @@ const Speciality = () => {
             <section style={{ marginTop: 50 }} className="services" id="services">
       <div>
         <h1 className="heading">
-          <span>s</span>
-          <span>p</span>
-          <span>e</span>
-          <span>c</span>
-          <span>i</span>
-          <span>a</span>
-          <span>l</span>
-          <span>i</span>
-          <span>t</span>
-          <span>y</span>
+        Speciality
         </h1>
       </div>
 
