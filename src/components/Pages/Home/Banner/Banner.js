@@ -16,7 +16,7 @@ const Banner = () => {
   <Carousel.Item interval={500}>
     <img
        style={{width: '100vw', height: '100vh'}}
-      src="https://i.ibb.co/rGvGJmy/pexels-jill-wellington-35625-1.jpg"
+      src="https://i.ibb.co/M6B0sfb/healthy-close-up-flatlay-featuring-celery.jpg"
       alt="Second slide"
     />
  
@@ -24,7 +24,7 @@ const Banner = () => {
   <Carousel.Item>
     <img
       className="d-block" style={{width: '100vw', height: '100vh'}}
-      src="https://i.ibb.co/HBzd8vD/vegetables-3386212-340.jpg"
+      src="https://i.ibb.co/mHwvdDP/harvest-1329043.jpg"
       alt="Third slide"
     />
   
