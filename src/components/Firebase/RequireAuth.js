@@ -4,6 +4,7 @@ import { Navigate, useLocation } from 'react-router-dom';
 import Loading from '../Shared Pages/Loading/Loading';
 import auth from './firebase.init';
 
+
 const RequireAuth = ({children}) => {
     const [user,loading]=useAuthState(auth)
     console.log('inside req auth', user);

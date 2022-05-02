@@ -16,6 +16,7 @@ const navigate= useNavigate()
 
 const [createUserWithEmailAndPassword,user]=useCreateUserWithEmailAndPassword(auth)
 
+
 // Email & password authentication
 const handleEmailBlur=(e) => {
 setEmail(e.target.value)
@@ -37,10 +38,10 @@ const handleCreateUser=(e) => {
         setError('Your two passwords did not match!!')
         return;
     }
-    // if (password.length<6) {
-    //     setError('Your password must be at least 6 characters or more')
-    //     return;
-    // }
+    if(password.length<6){
+        setError('Your Password must be at least 6 characters or longer!!')
+        return;
+    }
     createUserWithEmailAndPassword(email, password)
 }
 
@@ -50,14 +51,17 @@ const handleCreateUser=(e) => {
         <div>
             <h2 className="form_title">Sign Up</h2>
             <form onSubmit={handleCreateUser} >
+            
             <div className="input_group">
             <label htmlFor="email">Email</label>
             <input onBlur={handleEmailBlur} type="email" name="email" id="" required/>
             </div>
+            
             <div className="input_group">
             <label htmlFor="password">Password</label>
             <input onBlur={handlePasswordBlur} type="password" name="password" id="" required />
             </div>
+            
             <div className="input_group">
             <label htmlFor="password">Confirm Password</label>
             <input onBlur={handleConfirmPasswordBlur} type="password" name="password" id="" required/>

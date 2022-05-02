@@ -4,23 +4,27 @@ import "./Login.css";
 import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
-import {useAuthState , useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
- import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import {useAuthState , useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase/firebase.init';
 import SignOut from '../SignOut/SignOut';
+
+
+
+
 const Login = () => {
 
     const [user]=useAuthState(auth);
     const [email,setEmail]=useState(" ")
     const [password,setPassword]=useState(" ")
     const[error,setError]=useState(" ")
+    const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
+
     const navigate = useNavigate()
     const location=useLocation()
     const  from = location.state?.from?.pathname || "/";
    
 // log in with email and password
-    const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
+  
     const handleEmailBlur=(e) => {
         setEmail(e.target.value)
     }
@@ -30,7 +34,7 @@ const Login = () => {
     
 
     if (user) {
-        navigate(from,{replace: true})
+        navigate(from, {replace: true})
     }
  
     const handleUserSignIn=(e) => {
@@ -45,15 +49,19 @@ const Login = () => {
         <div>
             <h2 className="form_title">Login</h2>
             <form onSubmit={handleUserSignIn} >
+            
             <div className="input_group">
             <label htmlFor="email">Email</label>
             <input onBlur={handleEmailBlur} type="email" name="email" id="" required />
             </div>
+            
             <div className="input_group">
             <label htmlFor="password">Password</label>
             <input onBlur={handlePasswordBlur} type="password" name="password" id=""  required/>
             </div>
+            
             <p style={{ color :"red" }}>{error?.message}</p>
+            
             <div >
                 <input className="form_submit" type="submit" value="Login" />
             </div>
@@ -77,7 +85,6 @@ const Login = () => {
             </div>
             
         </div>
-        <ToastContainer />
     </div>
     );
 };
