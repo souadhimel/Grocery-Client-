@@ -24,17 +24,15 @@ function App() {
    <Routes>
      <Route path="/" element={<Home></Home>}></Route>
      <Route path="/home" element={<Home></Home>}></Route>
-     <Route path="/packages" element={<Packages></Packages>}></Route>
      <Route path="/addProducts" element={<AddProducts></AddProducts>}></Route>
      <Route path="/gallery" element={<Gallery></Gallery>}></Route>
      <Route path="/login" element={<Login></Login>}></Route>
-     <Route path="/details" element={<Details></Details>}></Route>
+     <Route path="/packages" element={<Packages></Packages>}></Route>
+     <Route path="/package/:packageId" element={<Details></Details>}></Route>
      <Route path="/register" element={<Register></Register>}></Route>
      <Route path="/blogs" element={<Blogs></Blogs>}></Route>
      <Route path="/inventory" element={<Inventory></Inventory>}></Route>
      <Route path="*" element={<NotFound></NotFound>}></Route>
-
-
    </Routes>
    <Footer></Footer>
     </div>

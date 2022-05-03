@@ -5,9 +5,9 @@ import "./Package.css";
 import Col from 'react-bootstrap/Col'
 
 const Package = (props) => {
-    const { img, name, description, price,quantity,spName } = props.vegetable;
+    const { img, name, description, price,quantity,spName,_id } = props.vegetable;
     return (
-        <Col className="my-3 text-center g-3"  sm={12} md={6} lg={4}>
+        <Col className="my-5 text-center"  sm={12} md={6} lg={4}>
       
         <Card style={{ height: "450px" }} className="mx-1  shadow">
           <div className="text-center">
@@ -23,8 +23,8 @@ const Package = (props) => {
             <Card.Title>Price: {price} TK</Card.Title>
             <Card.Title>Supplier Name:{spName}</Card.Title>
             <Card.Title>Quantity: {quantity}kG/Piece</Card.Title>
-            <Card.Text>{description.slice(0,50)}...</Card.Text>
-            <Link to="/details"><button style={{margin:"15px",padding:"12px", backgroundColor:"#5a189a",borderRadius:"5px", color:"white", width:"50%"}} type="button">Details</button></Link>
+            <Card.Text>{description.slice(0,50)}...</Card.Text> 
+            <Link to={'/package/'+_id}><button style={{margin:"15px",padding:"12px", backgroundColor:"#5a189a",borderRadius:"5px", color:"white", width:"50%"}} type="button">Details</button></Link>
           </Card.Body>
           </div>
         </Card>

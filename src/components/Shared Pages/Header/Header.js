@@ -20,11 +20,11 @@ const Header = () => {
       <CustomLink  to="/">Home</CustomLink>
       <CustomLink  to="/blogs">Blogs</CustomLink>  
       <CustomLink  to="/packages">Packages</CustomLink>  
-      <CustomLink  to="/addProducts">Add Products</CustomLink>  
       <CustomLink  to="/inventory">Inventory</CustomLink>
    
       {
-              user ? <button style={{backgroundColor:"pink", borderRadius:"50px"}} onClick={handleSignOut}>Sign out</button>:
+              user ? <button style={{backgroundColor:"pink", borderRadius:"50px"}} onClick={handleSignOut}>Sign out</button>
+              ||<CustomLink  to="/addProducts">Add Products</CustomLink>:
               <CustomLink  to="/login">Login</CustomLink>
             }
       

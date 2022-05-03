@@ -115,7 +115,7 @@ const Speciality = () => {
           <FcTreeStructure></FcTreeStructure>
           </i>
           <h3>Research</h3>
-          <p>we are working on our product issues (quality,improvements,services).</p>
+          <p>We are working on our product issues (quality,improvements,services).</p>
         </div>
       </div>
     </section>
