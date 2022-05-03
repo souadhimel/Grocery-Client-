@@ -1,3 +1,17 @@
-.card_info{
+/* .card_info{
     text-align: center;
+    font-size: 20px;
+} */
+/* .card_container{
+    border: 1px solid green
+} */
+/* .single_package{
+background: rgb(144, 141, 141);
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0 rgba(145, 126, 160, 0.2);
+  border: 0.2rem solid black;
+  padding: 2.5rem;
+} */
+.single_card{
+    background-color: rgb(91, 88, 88);
 }

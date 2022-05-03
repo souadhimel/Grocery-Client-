@@ -14,6 +14,7 @@ import Inventory from './components/Pages/Inventory/Inventory';
 // import RequireAuth from './components/Firebase/RequireAuth';
 import Packages from './components/Pages/Packages/Packages';
 import AddProducts from './components/Pages/Add Products/AddProducts';
+import Details from './components/Pages/Details/Details';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
      <Route path="/addProducts" element={<AddProducts></AddProducts>}></Route>
      <Route path="/gallery" element={<Gallery></Gallery>}></Route>
      <Route path="/login" element={<Login></Login>}></Route>
+     <Route path="/details" element={<Details></Details>}></Route>
      <Route path="/register" element={<Register></Register>}></Route>
      <Route path="/blogs" element={<Blogs></Blogs>}></Route>
      <Route path="/inventory" element={<Inventory></Inventory>}></Route>

@@ -30,7 +30,7 @@ const AddProducts = () => {
           <input style={{ height:"50px",border: "2px solid red"}}
             className="form-control"
             {...register("name", { required: true, maxLength: 20 })}
-            placeholder="Name"
+            placeholder="Product Name"
           />
             <input
             className="form-control"
@@ -43,6 +43,12 @@ const AddProducts = () => {
             type="number"
             {...register("price")}
             placeholder="Taka"
+          />
+          <input
+            className="form-control"
+            type="text"
+            {...register("spName")}
+            placeholder="Supplier Name"
           />
           <input
             className="form-control"

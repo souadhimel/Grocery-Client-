@@ -8,9 +8,6 @@ import {useAuthState , useSignInWithEmailAndPassword, useSignInWithGoogle } from
 import auth from '../../Firebase/firebase.init';
 import SignOut from '../SignOut/SignOut';
 
-
-
-
 const Login = () => {
 
     const [user]=useAuthState(auth);
