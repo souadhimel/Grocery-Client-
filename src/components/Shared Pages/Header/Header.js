@@ -19,11 +19,12 @@ const Header = () => {
     <Nav className="ms-auto">
       <CustomLink  to="/">Home</CustomLink>
       <CustomLink  to="/blogs">Blogs</CustomLink>  
-      <CustomLink  to="/packages">Packages</CustomLink>  
-      <CustomLink  to="/inventory">Inventory</CustomLink>
+      <CustomLink  to="/packages">Packages</CustomLink>
+
+      
    
       {
-              user ? <button style={{backgroundColor:"pink", borderRadius:"50px"}} onClick={handleSignOut}>Sign out</button>
+              user ? <button className="signOut_click" onClick={handleSignOut}>Sign out</button>
               ||<CustomLink  to="/addProducts">Add Products</CustomLink>:
               <CustomLink  to="/login">Login</CustomLink>
             }

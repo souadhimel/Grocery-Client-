@@ -24,7 +24,7 @@ const AddProducts = () => {
 
   };
     return (
-        <div className="add-service">
+        <div className="add-service m-5">
         <h2 className="text-center" style={{marginTop:'20px', color:'blue',fontSize:'30px'}}>Please add your desired vegetables</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input style={{ height:"50px",border: "2px solid red"}}

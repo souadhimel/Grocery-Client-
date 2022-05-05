@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import {  Table } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import Swal from 'sweetalert2';
+import SingleInventory from '../Single Inventory/SingleInventory';
 
-
-const MyOrders = () => {
-
+const ManageInventories = () => {
 
     const [vegetables,setVegetables]=useState([])
     
@@ -14,7 +13,7 @@ const MyOrders = () => {
         .then(data=>setVegetables(data))
     },[])
 
-    const orderCancel=id=>{
+    const inventoryDelete=id=>{
         const proceed=window.confirm('Are you sure you want to delete?')
        if (proceed) {
          const url=`http://localhost:5000/vegetable/${id}`;
@@ -46,48 +45,27 @@ const MyOrders = () => {
        }
     }
     return (
-        <>
-               <div>
-      <div className="py-5">
-        <div className="container">
-          <div>
-            <h2 className="heading">My Orders</h2>
-          </div>
-          <div className="mx-auto">
-            <Table striped bordered responsive hover>
-              <thead>
-                <tr>
-                  <th>Product Id</th>
-                  <th> Name</th>
-                  <th>Price</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                {vegetables.map((vegetable) => (
-                  <tr key={vegetable._id}>
-                    <td>{vegetable?._id}</td>
-                    <td>{vegetable?.name}</td>
-                    <td>{vegetable?.price}</td>
-                    <td>
-                      <button
-                        onClick={() => orderCancel(vegetable?._id)}
-                        style={{margin:"15px",padding:"12px", backgroundColor:"red",borderRadius:"5px", color:"white", width:"50%"}} 
-                      >
-                        Cancel
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </Table>
-          </div>
-        </div>
-      </div>
+        <div>
+            
+         <h2 className="heading mt-5">Manage Inventories</h2>
+        <Container className="mb-5">
+  
+  <Row>
+  {
+            vegetables.map((vegetable) =>
+                (<SingleInventory
+                
+                key={vegetable._id}
+                vegetable={vegetable} 
+                inventoryDelete={inventoryDelete}
+                               
+                ></SingleInventory>
+            ))
+        }
+  </Row>
+</Container>
     </div>
-        </>
-
     );
 };
 
-export default MyOrders;
+export default ManageInventories;
