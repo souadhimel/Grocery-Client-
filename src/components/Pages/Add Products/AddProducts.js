@@ -1,7 +1,9 @@
 
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import "./AddProducts.css"
+import { toast, ToastContainer } from 'react-toastify';
+import "./AddProducts.css";
+import 'react-toastify/dist/ReactToastify.css'
 
 const AddProducts = () => {
 
@@ -18,14 +20,14 @@ const AddProducts = () => {
     .then (res=>res.json())
     .then(data => {
         console.log("success",data);
-        alert('Successfully added')
+        toast('Successfully added')
         reset()
     })
 
   };
     return (
         <div className="add-service m-5">
-        <h2 className="text-center" style={{marginTop:'20px', color:'blue',fontSize:'30px'}}>Please add your desired vegetables</h2>
+        <h2 className="text-center" style={{marginTop:'20px', color:'blue',fontSize:'30px'}}>Please add your desired items</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input style={{ height:"50px",border: "2px solid red"}}
             className="form-control"
@@ -59,6 +61,7 @@ const AddProducts = () => {
         
           <input className="add_button" type="submit" />
         </form>
+        <ToastContainer/>
       </div>
     );
 };

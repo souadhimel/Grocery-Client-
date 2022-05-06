@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="myColor" variant="dark">
   <Container>
-  <Navbar.Brand to="/">Grocery Shop</Navbar.Brand>
+  <Navbar.Brand to="/" style={{color: 'black', fontSize:"20px"}}>Grocery Shop</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ms-auto">
@@ -23,10 +23,15 @@ const Header = () => {
 
       
    
-      {
-              user ? <button className="signOut_click" onClick={handleSignOut}>Sign out</button>
-              ||<CustomLink  to="/addProducts">Add Products</CustomLink>:
-              <CustomLink  to="/login">Login</CustomLink>
+           {
+              user ? <>
+              <CustomLink  to="/addProducts">Add Items</CustomLink>
+              <CustomLink  to="/myOrders">My items</CustomLink>
+              <CustomLink  to="/manageInventories">Manage Items</CustomLink>
+              <button className="signOut_click" onClick={handleSignOut}>Sign out</button>
+              
+              </>
+              :<CustomLink  to="/login">Login</CustomLink>
             }
       
     </Nav>

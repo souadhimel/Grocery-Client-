@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import SingleInventory from '../Single Inventory/SingleInventory';
 
 const ManageInventories = () => {
 
     const [vegetables,setVegetables]=useState([])
+    
     
     useEffect(() => {
         fetch('http://localhost:5000/vegetable')
@@ -46,6 +48,9 @@ const ManageInventories = () => {
     }
     return (
         <div>
+          <div className="add">
+           <Link to="/addProducts"> <button style={{backgroundColor:"#516be8",color:"white", margin:"40px auto",justifyContent:"center",alignItems:"center"}} className="delivered_click">Add Items</button></Link>
+           </div>
             
          <h2 className="heading mt-5">Manage Inventories</h2>
         <Container className="mb-5">

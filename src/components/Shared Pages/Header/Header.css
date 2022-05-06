@@ -2,9 +2,10 @@
     background-color:rgb(176, 229, 188);
 }
 .signOut_click{
-    background-color: red;
-    margin: 2px;
-    padding: 3px;
-    width: 70px;
-    border-radius: 7px 0;
+    background-color: rgb(198, 27, 27);
+    width: 100px;
+    height: 30px;
+    border-radius: 15px 15px;
+    color: white;
+    font-size: 15px;
 }

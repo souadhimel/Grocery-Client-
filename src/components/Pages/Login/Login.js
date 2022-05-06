@@ -29,7 +29,6 @@ const Login = () => {
         setPassword(e.target.value)
     }
     
-
     if (user) {
         navigate(from, {replace: true})
     }
@@ -37,6 +36,11 @@ const Login = () => {
     const handleUserSignIn=(e) => {
         e.preventDefault()
         signInWithEmailAndPassword(email, password)
+
+        if (password.length<6) {
+            setError('Your password must be at least 6 characters or more')
+            return;
+        }
     }
 
 // google sign in
