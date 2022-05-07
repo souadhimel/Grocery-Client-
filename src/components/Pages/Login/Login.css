@@ -43,7 +43,7 @@
     cursor: pointer;
 }
 .form_submit:hover{
-  background-color: rgb(148, 148, 223);  
+  background-color: rgb(98, 98, 235);  
 }
 .form_submit_google{
     width: 415px;
@@ -53,7 +53,7 @@
     cursor: pointer;
 }
 .form_submit_google:hover{
-    background-color: rgb(215, 156, 156);
+    background-color: rgb(174, 83, 83);
 }
 .form_link{
     color: #dca553;

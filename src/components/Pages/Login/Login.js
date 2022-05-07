@@ -4,7 +4,7 @@ import "./Login.css";
 import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
-import {useAuthState , useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import {useAuthState , useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase/firebase.init';
 import SignOut from '../SignOut/SignOut';
 
@@ -42,6 +42,7 @@ const Login = () => {
             return;
         }
     }
+    
 
 // google sign in
     const [signInWithGoogle] = useSignInWithGoogle(auth);
