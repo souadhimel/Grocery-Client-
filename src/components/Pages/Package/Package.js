@@ -24,9 +24,9 @@ const Package = (props) => {
           <div style={{backgroundColor:"rgb(174, 167, 167)"}}>
           <Card.Body style={{marginTop:"30px"}}>
             <Card.Title className="text-uppercase">{name}</Card.Title>
-            <Card.Title>Price: {price} TK</Card.Title>
+            <Card.Title>Price: {price} TK/ Kg</Card.Title>
             <Card.Title>Supplier Name:{spName}</Card.Title>
-            <Card.Title>Quantity: {quantity}kg/Piece</Card.Title>
+            <Card.Title>Quantity: {quantity}kg</Card.Title>
             <Card.Text>{description.slice(0,50)}...</Card.Text> 
             <button className="go" style={{margin:"15px",padding:"12px", backgroundColor:"#5a189a",borderRadius:"5px", color:"white", width:"50%"}}  onClick={()=>go(_id)}>Update</button>
             

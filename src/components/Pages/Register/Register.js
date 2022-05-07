@@ -7,13 +7,11 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase/firebase.init';
 
 const Register = () => {
-
 const [email,setEmail]=useState(' ')
 const [password,setPassword]=useState(' ')
 const [confirmPassword,setConfirmPassword]=useState(' ')
 const [error,setError]=useState(' ')
 const navigate= useNavigate()
-
 const [createUserWithEmailAndPassword,user]=useCreateUserWithEmailAndPassword(auth)
 
 
@@ -28,10 +26,10 @@ const handleConfirmPasswordBlur=(e) => {
 setConfirmPassword(e.target.value)
 }
 
-
 if (user) {
    navigate('/home') 
 }
+
 const handleCreateUser=(e) => {
     e.preventDefault();
     if(password !==confirmPassword){

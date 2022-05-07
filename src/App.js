@@ -29,7 +29,9 @@ function App() {
      <Route path="/gallery" element={<Gallery></Gallery>}></Route>
      <Route path="/login" element={<Login></Login>}></Route>
      <Route path="/packages" element={<Packages></Packages>}></Route>
-     <Route path="/manageInventories" element={<ManageInventories></ManageInventories>}></Route>
+     <Route path="/manageInventories" element={
+       <RequireAuth><ManageInventories></ManageInventories></RequireAuth>
+     }></Route>
      <Route path="/vegetable/:id" element={
        <RequireAuth><Details></Details></RequireAuth>
      }></Route>

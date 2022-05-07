@@ -34,7 +34,7 @@ const Inventory = () => {
       </Row>
     </Container>
            
-        <div className="rating_btn"><button className="btn_text"><Link to="/manageInventories" className="link_text">Manage Inventories</Link></button></div>
+        <div className="rating_btn"><button style={{borderRadius:"30px"}} className="btn_text"><Link to="/manageInventories" className="link_text">Manage Inventories</Link></button></div>
         </div>
     );
 };
