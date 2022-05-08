@@ -10,7 +10,7 @@ const AddProducts = () => {
     const { register, handleSubmit,reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    fetch('http://localhost:5000/vegetable',{
+    fetch('https://pure-mountain-88374.herokuapp.com/vegetable',{
         method: 'POST',
         headers:{
             'Content-Type': 'application/json'

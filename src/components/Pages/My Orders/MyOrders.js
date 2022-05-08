@@ -12,7 +12,7 @@ const updateStock=(id)=>{
   navigate(`/vegetable/${id}`)
 }
     useEffect(() => {
-        fetch('http://localhost:5000/vegetable')
+        fetch('https://pure-mountain-88374.herokuapp.com/vegetable')
         .then(res=>res.json())
         .then(data=>setVegetables(data))
     },[])
@@ -20,7 +20,7 @@ const updateStock=(id)=>{
     const orderCancel=id=>{
         const proceed=window.confirm('Are you sure you want to delete?')
        if (proceed) {
-         const url=`http://localhost:5000/vegetable/${id}`;
+         const url=`https://pure-mountain-88374.herokuapp.com/vegetable/${id}`;
         fetch(url,{
             method: 'DELETE'
         }) 

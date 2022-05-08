@@ -9,7 +9,7 @@ const Details = () => {
     const [vegetable,setVegetable]=useState({})
     let {img,name,price,description,spName,quantity}=vegetable;
      useEffect(() => {
-        const url=`http://localhost:5000/vegetable/${id}`
+        const url=`https://pure-mountain-88374.herokuapp.com/vegetable/${id}`
         console.log(url);
          fetch(url)
         .then(res=>res.json())
@@ -20,7 +20,7 @@ const delivered= () => {
 let Remaining=parseFloat(+vegetable.quantity)-1
 let newInventory={img,name,price,quantity:Remaining,description,spName}
 setVegetable(newInventory)
-fetch(`http://localhost:5000/vegetable/${id}`,{
+fetch(`https://pure-mountain-88374.herokuapp.com/vegetable/${id}`,{
   method: 'PUT',
   body: JSON.stringify(newInventory),
   headers:{
@@ -39,7 +39,7 @@ const restock= (e) => {
 let updatedQuantity=parseFloat(+vegetable.quantity)+ parseFloat(e.target.upQuantity.value);
 let newInventory={img,name,price,quantity:updatedQuantity,description,spName}
 setVegetable(newInventory)
-fetch(`http://localhost:5000/vegetable/${id}`,{
+fetch(`https://pure-mountain-88374.herokuapp.com/vegetable/${id}`,{
   method: 'PUT',
   body: JSON.stringify(newInventory),
   headers:{

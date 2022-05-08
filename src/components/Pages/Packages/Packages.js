@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row'
 const Packages = () => {
   const [vegetable, setVegetable] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/vegetable")
+    fetch("https://pure-mountain-88374.herokuapp.com/vegetable")
       .then((res) => res.json())
       .then((data) => setVegetable(data));
   }, []);
