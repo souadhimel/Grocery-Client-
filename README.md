@@ -1,6 +1,6 @@
 # Title: "Grocery Shop"
 
-## Live site link:"https://my-furniture-website.web.app/"
+## Live site link:"https://grocery-service-5e808.web.app/"
 
 ### Road map:
 
